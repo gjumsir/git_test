@@ -1,0 +1,22 @@
+namespaces
+namespaces basically is a block of code to organise and avoid collisions, for example std
+which is for the standard library has so many functions and we have our own software and 
+and we name a function "cout". We don't know for who the "cout" is, is it for the std or of our
+own function. Therefore we use std to be able to recognise to which function we refering to.
+
+pointers
+Imagine we had a pizza party with 100 of pizzas and noone showed up. We don't want those 
+pizzas to go to waste, therefore we knock on each door and ask them if they want pizza. 
+This would take too many recourses taking each pizza to every single door. So what do we do?
+We give the address of the our place and tell them that we have pizzas and everyone comes
+and pick them up.
+
+So this basically what we do. 
+
+We have a string named Bob 
+string name = "Bob";
+and bob wants to give his address so we can take the pizzas
+string *pName = &name // & address of operator * dereference operator
+The pointer *pName has now bobs address //memory address
+cout << pName //this what the pointer saved, aka bob's address: 0xb14fbff760
+and if we want to print out the address //access the value of that is stored at the address 0xb14fbff760
